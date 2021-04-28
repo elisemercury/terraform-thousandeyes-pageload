@@ -38,4 +38,5 @@ resource "thousandeyes_page_load" "test2" {
   agents {
       agent_id = 65163 # Tokyo
   }
-}```
+}
+```
