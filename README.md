@@ -6,7 +6,7 @@ This code shows an example of a google.com pageload test:
 
 ```terraform
 resource "thousandeyes_page_load" "test2" {
-  test_name = "google_pageload"
+  test_name = "website_pageload"
   
   alerts_enabled         = 0
   bandwidth_measurements = 0
@@ -41,7 +41,7 @@ resource "thousandeyes_page_load" "test2" {
 }
 ```
 
-The only required variable is the ThousandEyes OAuth Bearer Token which can be found under ```Account Settings>User and Roles>User API Tokens``` in the ThousandEyes dashboard.
+The required variables are the ThousandEyes OAuth Bearer Token which can be found under ```Account Settings>User and Roles>User API Tokens``` in the ThousandEyes dashboard and the link of the page the test should be perfomed on.
 
 ```terraform
 variable "te_token" {
