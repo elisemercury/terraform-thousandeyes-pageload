@@ -40,3 +40,12 @@ resource "thousandeyes_page_load" "test2" {
   }
 }
 ```
+
+The only required variable is the ThousandEyes API token, which can be found under account settings in the ThousandEyes dashboard.
+
+```
+variable "te_token" {
+  type    = string
+  description = "thousandEyes dashboard API token"
+}
+```
