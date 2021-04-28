@@ -4,7 +4,7 @@ This module allows for pageload testing with ThousandEyes through the Terraform 
 
 This code shows an example of a google.com pageload test:
 
-```python
+```terraform
 resource "thousandeyes_page_load" "test2" {
   test_name = "google_pageload"
   
@@ -41,9 +41,9 @@ resource "thousandeyes_page_load" "test2" {
 }
 ```
 
-The only required variable is the ThousandEyes API token, which can be found under account settings in the ThousandEyes dashboard.
+The only required variable is the ThousandEyes OAuth Bearer Token which can be found under ```Account Settings>User and Roles>User API Tokens``` in the ThousandEyes dashboard.
 
-```
+```terraform
 variable "te_token" {
   type    = string
   description = "thousandEyes dashboard API token"
