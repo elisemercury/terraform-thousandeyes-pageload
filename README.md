@@ -14,7 +14,7 @@ resource "thousandeyes_page_load" "test2" {
 
   content_regex = ".*"
   
-  url      = "https://google.com"
+  url      = var.test_page
   
   interval      = 300
   http_interval = 300
@@ -47,6 +47,11 @@ The only required variable is the ThousandEyes OAuth Bearer Token which can be f
 variable "te_token" {
   type    = string
   description = "thousandEyes dashboard API token"
+}
+
+variable "test_page" {
+  type    = string
+  description = "website of the page that the test will be perfomed on"
 }
 ```
 After running the pageload test, the test result should show up in your ThousandEyes dashboard.
