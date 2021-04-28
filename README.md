@@ -49,3 +49,4 @@ variable "te_token" {
   description = "thousandEyes dashboard API token"
 }
 ```
+After running the pageload test, the test result should show up in your ThousandEyes dashboard.
