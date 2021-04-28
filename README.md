@@ -4,7 +4,7 @@ This module allows for pageload testing with ThousandEyes through the Terraform 
 
 This code shows an example of a google.com pageload test:
 
-```
+```python
 resource "thousandeyes_page_load" "test2" {
   test_name = "google_pageload"
   
