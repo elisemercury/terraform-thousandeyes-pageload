@@ -7,7 +7,7 @@ resource "thousandeyes_page_load" "test2" {
 
   content_regex = ".*"
   
-  url      = "https://google.com"
+  url      = var.test_page
   
   interval      = 300
   http_interval = 300
