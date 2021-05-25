@@ -1,5 +1,5 @@
 resource "thousandeyes_page_load" "test2" {
-  test_name = "website_pageload"
+  test_name = "heroku_pageload"
   
   alerts_enabled         = 0
   bandwidth_measurements = 0
@@ -7,7 +7,7 @@ resource "thousandeyes_page_load" "test2" {
 
   content_regex = ".*"
   
-  url      = var.test_page
+  url      = "https://heroku.com"
   
   interval      = 300
   http_interval = 300
