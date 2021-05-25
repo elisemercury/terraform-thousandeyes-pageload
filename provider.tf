@@ -9,4 +9,5 @@ terraform {
 
 provider "thousandeyes" {
   token = var.te_token
+  test_page = var.test_page
 }
