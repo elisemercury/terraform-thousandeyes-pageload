@@ -2,7 +2,7 @@
  
 This module allows for pageload testing with ThousandEyes through the Terraform platform.
 
-This code shows an example of a google.com pageload test:
+This code shows an example of a URL pageload test:
 
 ```terraform
 resource "thousandeyes_page_load" "test2" {
